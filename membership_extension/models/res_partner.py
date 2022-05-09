@@ -70,6 +70,7 @@ class ResPartner(models.Model):
         store=True,
         comodel_name="membership.membership_category",
         compute="_compute_membership_state",
+        recursive=True
     )
     membership_categories = fields.Char(
         string="Membership Categories",
